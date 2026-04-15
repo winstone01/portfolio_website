@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<!-- 21/02/2026 -->
+<html lang="en" dir="ltr">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./assests/favicon.ico" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="./style.css">
+   <title>Portfolio.Vol1</title>
+</head>
+
+<body>
+
+   <!-- head -->
+   <header class="active">
+      <a href="#" class="logo"><img src="./assests/favicon.ico" alt="logo"></a>
+
+      <i class="bx bx-menu" id="menu_icon"></i>
+
+      <nav>
+         <a href="#home">Home</a>
+         <a href="#services">Services</a>
+         <a href="#resume">Resume</a>
+         <a href="#portfolio">Portfolio</a>
+         <a href="#contact">Contact</a>
+      </nav>
+   </header>
+   <!-- bars for background -->
+   <div class="bars_box active">
+      <div class="bar" style="--i:6" ></div>
+      <div class="bar" style="--i:5" ></div>
+      <div class="bar" style="--i:4" ></div>
+      <div class="bar" style="--i:3" ></div>
+      <div class="bar" style="--i:2" ></div>
+      <div class="bar" style="--i:1" ></div>
+   </div>
+
+   <!-- home section  -->
+   <section class="home active ">
+      <article class="home_detail">
+         <h1> Winstone Anderson </h1>
+         <h2 class="role_line">
+            I am a <span class="role" data-text="Frontend Developer">Frontend Developer</span>
+         </h2>
+         <p> UI-focused frontend developer with a background in physical security and a strong technical foundation. I build clean,
+         responsive interfaces with modern HTML, CSS, and JavaScript—focused on clarity, accessibility, and performance.</p>
+         <div class="btn_sci">
+            <div class="cta">
+               <a class="btn" href="#">Download CV</a>
+               <a class="btn btn_ghost" href="#portfolio">View Portfolio</a>
+            </div>
+            <div class="sci">
+               <!-- your icon links -->
+               <a href="#"><i title="fa" class='bx bxl-facebook'></i></a>
+               <a href="#"><i title="tw" class='bx bxl-twitter'></i></a>
+               <a href="#"><i title="li" class='bx bxl-linkedin'></i></a>
+               <a href="#"><i title="gh" class='bx bxl-github'></i></a>
+            </div>
+            <div class="accent_picker" aria-label="Accent colour picker">
+               <button class="accent_btn accent_btn_1" data-accent="#FF4D6D" aria-label="Pink"></button>
+               <button class="accent_btn accent_btn_2" data-accent="#7CFF4C" aria-label="Neon green"></button>
+               <button class="accent_btn accent_btn_3" data-accent="#8B64E6" aria-label="Purple"></button>
+               <button class="accent_btn accent_btn_4" data-accent="#00D1FF" aria-label="Cyan"></button>
+               <button class="accent_btn accent_btn_5" data-accent="#FFB020" aria-label="Amber"></button>
+            </div>
+         </div>
+      </article>
+
+      <article class="home_img">
+         <div class="img_box">
+            <div class="img_item">
+               <img src="./assests/pic.png" alt="winstone...">
+            </div>
+         </div>
+      </article>
+   </section>
+
+   <!-- service section -->
+   <section class="services  ">
+      <h2 class="heading">My <span>Services </span> </h2>
+      <article class="services_container">
+         <div class="services_box">
+            <div class="icon">
+               <i class='bx bx-palette'></i>
+               <a title="more" href="#"> <i class="bx bx-arrow-back"></i> </a>
+            </div>
+            <h3>Web Development</h3>
+            <p>Creating modern, responsive websites that reflect your brand, prioritize usability and accessibility, and
+               help turn
+               visitors into customers.</p>
+               <button  title="more" class="more" type="button" aria-expanded="false">
+                  <i class="bx bx-arrow-back"></i>
+               </button>
+               
+               <div class="service_more" hidden>
+                  <ul>
+                     <li>Responsive layouts</li>
+                     <li>Accessibility checks</li>
+                     <li>Performance improvements</li>
+                  </ul>
+               </div>
+         </div>
+         <div class="services_box">
+            <div class="icon">
+               <i class='bx bxs-paint'></i>
+               <a title="ab" href="#"> <i class="bx bx-arrow-back"></i> </a>
+            </div>
+            <h3>UI/UX Developer</h3>
+            <p>Focuses on creating intuitive, visually appealing, and functional digital products.</p>
+            <button title="more" class="more" type="button" aria-expanded="false">
+               <i class="bx bx-arrow-back"></i>
+            </button>
+            <div class="service_more" hidden>
+               <ul>
+                  <li>Designing intuitive user experiences through research and wire framing</li>
+                  <li>Creating visually appealing interfaces (UI) that adhere to brand guidelines</li>
+                  <li>Coding responsive front-end components (HTML/CSS/JS) to bring those designs to life</li>
+               </ul>
+            </div>
+         </div>
+         <div class="services_box">
+            <div class="icon">
+               <i class='bx bxs-palette'></i>
+               <a title="ab" href="#"> <i class="bx bx-arrow-back"></i> </a>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>Building fast, accessible interfaces with modern HTML, CSS, and JavaScript—focused on clean UI, responsive layouts,
+               and maintainable code.</p>
+            <button title="more" class="more" type="button" aria-expanded="false">
+               <i class="bx bx-arrow-back"></i>
+            </button>
+            
+            <div class="service_more" hidden>
+               <ul>
+                  <li>Implementing user interface (UI) designs</li>
+                  <li>Ensuring responsiveness across devices</li>
+                  <li>Optimizing performance</li>
+               </ul>
+            </div>
+         </div>
+         <div class="services_box">
+            <div class="icon">
+               <i class='bx bxl-tux'></i>
+               <a title="ab" href="#"> <i class="bx bx-arrow-back"></i> </a>
+            </div>
+            <h3>System Administrator</h3>
+            <p>Ensures the reliable operation, maintenance, and security of an organization’s IT infrastructure,
+               including servers,
+               networks, and software systems</p>
+               <button title="more" class="more" type="button" aria-expanded="false">
+                  <i class="bx bx-arrow-back"></i>
+               </button>
+               
+               <div class="service_more" hidden>
+                  <ul>
+                     <li>Installing, configuring, and maintaining server hardware and software</li>
+                     <li>Monitoring system performance to ensure uptime</li>
+                     <li>Managing security through backups, updates, and user access</li>
+                  </ul>
+               </div>
+         </div>
+         <div class="services_box">
+            <div class="icon">
+               <i class='bx bxl-graphql'></i>
+               <a title="ab" href="#"> <i class="bx bx-arrow-back"></i> </a>
+            </div>
+            <h3>Graphic Designer</h3>
+            <p>Creates visual concepts and brand assets that communicate ideas clearly—supporting campaigns, products, and digital
+               content.</p>
+            <button title="more" class="more" type="button" aria-expanded="false">
+               <i class="bx bx-arrow-back"></i>
+            </button>
+            
+            <div class="service_more" hidden>
+               <ul>
+                  <li>Conceptualizing creative ideas based on client briefs</li>
+                  <li>producing visual assets using design software (like Adobe Creative Suite)</li>
+                  <li>Collaborating with teams to refine designs through feedback</li>
+               </ul>
+            </div>
+         </div>
+         <div class="services_box">
+            <div class="icon">
+               <i class='bx bx-building-house'></i>
+               <a title="ab" href="#"> <i class="bx bx-arrow-back"></i> </a>
+            </div>
+            <h3>Fire Warden </h3>
+            <p>Trained in fire safety procedures, evacuation protocols, and how to use fire protection equipment effectively.</p>
+            <button title="more" class="more" type="button" aria-expanded="false">
+               <i class="bx bx-arrow-back"></i>
+            </button>
+            
+            <div class="service_more" hidden>
+               <ul>
+                  <li>Preventing fires by conducting risk assessments and clearing escape routes</li>
+                  <li>Managing safe evacuations during an alarm</li>
+                  <li>Conducting a final sweep of their assigned area to ensure everyone has left.</li>
+               </ul>
+            </div>
+         </div>
+         <div class="services_box">
+            <div class="icon">
+               <i class='bx bx-first-aid'></i>
+               <a title="ab" href="#"> <i class="bx bx-arrow-back"></i> </a>
+            </div>
+            <h3>First Aider </h3>
+            <p>Trained to SIA standards  </p>
+            <button title="more" class="more" type="button" aria-expanded="false">
+               <i class="bx bx-arrow-back"></i>
+            </button>
+            
+            <div class="service_more" hidden>
+               <ul>
+                  <li>Preserve Life, Prevent Further Injury</li>
+                  <li>Deterioration</li>
+                  <li>Promote Recovery</li>
+               </ul>
+            </div>
+         </div>
+         <div class="services_box">
+            <div class="icon">
+               <i class='bx bx-cctv'></i>
+               <a title="ab" href="#"> <i class="bx bx-arrow-back"></i> </a>
+            </div>
+            <h3>Security Officer</h3>
+            <p>Been in the physical security industry for decades, providing security services in retail, cooperate,
+               concierge, in-house and managing surveillance systems. First Aid and Fire warden trained</p>
+               <button title="more" class="more" type="button" aria-expanded="false">
+                  <i class="bx bx-arrow-back"></i>
+               </button>
+               <div class="service_more" hidden>
+                  <ul>
+                     <li>Protection against Fire, Theft or Flood </li>
+                     <li>Regular  Risk assessments check </li>
+                     <li>Always on standby of an emergences </li>
+                  </ul>
+               </div>
+         </div>
+      </article>
+   </section>
+   <!-- resume section -->
+   <section class="resume  ">
+      <article class="resume_container" >
+         <div class="resume_box">
+         <h2>What I bring?</h2>
+         <p class="desc">
+            I am a UI/UX-focused Frontend Developer who builds clean, responsive interfaces with HTML, CSS, and JavaScript.
+            I care about clarity, accessibility, and performance—so products feel polished, fast, and easy to use.
+         
+            I bring years of real-world responsibility from the physical security industry: calm under pressure, strong
+            communication,
+            and attention to detail. I now channel that reliability into building dependable web experiences.
+         </p>
+            <button title="btn" class="resume_btn active ">Experience</button>
+            <button title="btn" class="resume_btn">Education</button>
+            <button title="btn" class="resume_btn">Skills</button>
+            <button title="btn" class="resume_btn">About</button>
+         </div>
+         <div class="resume_box">
+            <div class="resume_details experience active">
+               <h2 class="heading">My <span>Experience</span></h2>
+               <p class="desc">
+                  I build and refine front-end projects with a focus on layout systems, reusable components, and user-friendly
+                  interactions.
+                  Recent work includes UI dashboards, interactive apps, and responsive portfolio builds—shaped through iteration and
+                  feedback.
+               </p>
+               <article class="resume_list">
+                  <div class="resume_item">
+                     <p class="year"><i class="fa fa-calendar"></i> 2023 - Current</p>
+                     <h3>Frontend Developer Free lance</h3>
+                     <p class="company">Free lance</p>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus sunt molestiae explicabo quis rem voluptatibus asperiores facilis ducimus, optio delectus ipsa? Deserunt sint sed mollitia omnis vero ducimus rem quia?</p>
+                  </div>
+                  <div class="resume_item">
+                     <p class="year"><i class="fa fa-calendar"></i> 2019 - 2023</p>
+                     <h3>Night Security Officer</h3>
+                     <p class="company"> Fahrenheit</p>
+                     <p>Maintain security cover over night for different sites in Hackney</p>
+                  </div>
+                  <div class="resume_item">
+                     <p class="year"><i class="fa fa-calendar"></i> 2016 - 2019</p>
+                     <h3>Security Officer / Concierge</h3>
+                     <p class="company"> ISS</p>
+                     <p>This would be either days, night or weekends shift all depending on requirements. Receptionist duties which include
+                     monitoring visitors and calls Health and safety checks overseeing the protection of the building and occupants against
+                     fire, theft and flood</p>
+                  </div>
+                  <div class="resume_item">
+                     <p class="year"><i class="fa fa-calendar"></i> 2014 - 2016</p>
+                     <h3>Operational Duty Controller</h3>
+                     <p class="company"> TSG</p>
+                     <p>Work with the mobile supervisors and officers on many deferent site across England to deliver high quality service to our clients. Ensure that the
+                     Company complies at all times with the industry standards and in accordance with company policies and procedures.
+                     Ensure the smooth running of the various relevant business systems.</p>
+                  </div>
+               </article>
+            </div>
+            <article class="resume_details education">
+               <h2 class="heading">My <span>Education</span></h2>
+               <p class="desc">
+                  <p>
+                     BSc Computer Networks, plus a Postgraduate Certificate in Information Security &amp; Digital Forensics (Cyber
+                     Security).
+                     This background gives me a strong technical foundation and supports my front-end work—clear problem-solving,
+                     structured thinking,
+                     and an eye for building reliable, user-friendly interfaces.
+                  </p>
+                  
+               </p>
+               <div class="resume_list">
+                  <div class="resume_item">
+                     <p class="year">2014</p>
+                     <h3>PG Cert. ISS and Digital forensic science</h3>
+                     <p>The maddening world of Information Security Systems and how its relates to Digital Forensic environments. this is now
+                        called Cybersecurity</p>
+                  </div>
+                  <div class="resume_item">
+                     <p class="year">2009</p>
+                     <h3>(Hon)Computer Network BSc</h3>
+                     <p>Advance level understanding of The Internet Of Things and how its connected. Comfortable in Windows, MacOS, iOS and
+                     Unix Linux systems. As well as how best to secure these environments and monitor these environments ever via IDS or
+                     kali-linux</p>
+                  </div>
+               </div>
+               
+            </article>
+            <article class="resume_details skills">
+               <h2 class="heading">My <span>Skills</span></h2>
+               <p class="desc">
+                  <p>
+                     My skill set combines front-end development, UI thinking, and a strong technical foundation. I enjoy building clean,
+                     responsive interfaces and expanding my toolkit through practical, project-based learning.
+                  </p>
+               </p>
+               <div class="resume_list">
+                  <div class="resume_item">
+                     <i class="fa-brands fa-html5"></i>
+                     <span> HTML5 </span>
+                  </div>
+                  <div class="resume_item">
+                     <i class='bx bxl-css3'></i>
+                     <span>CSS3</span>
+                  </div>
+                  <div class="resume_item">
+                     <i class="fa-brands fa-square-js"></i>
+                     <span>JavaScript</span>
+                  </div>
+                  <div class="resume_item">
+                     <i class="fa-brands fa-react"></i>
+                     <span>REACT</span>
+                  </div>
+                  <div class="resume_item">
+                     <i class="fa-brands fa-node"></i>
+                     <span>Node.js</span>
+                  </div>
+                  <div class="resume_item">
+                     <i class="fa-brands fa-python"></i>
+                     <span>Python3</span>
+                  </div>
+                  <div class="resume_item">
+                     <i class='bx bxl-jquery'></i>
+                     <span>jQuery</span>
+                  </div>
+                  <div class="resume_item">
+                     <i class='bx bxl-java'></i>
+                     <span>java</span>
+                  </div>
+               </div>
+               <ul class="resume_points">
+                  <li>Responsive UI builds using modern HTML/CSS (Grid/Flex) and vanilla JavaScript/jQuery</li>
+                  <li>Accessibility-minded design: structure, contrast, and keyboard-friendly interactions</li>
+                  <li>Performance-conscious UI: clean DOM updates, lightweight effects, maintainable code</li>
+               </ul>
+            </article>
+            <article class="resume_details about">
+               <h2 class="heading"><span>About</span> me</h2>
+               <p class="desc">
+                  <p>West London boy me. Born in Hammersmith but spent my early years to end teens in Jamaica WI., love school, love
+                     reading. One of my earliest memory, 3 years old me, staring out the window at St John's Primary school thinking a one
+                     day I will be there. Half a century later that feeling as not left me. Fortunately I won my pick to attend one of the
+                     island's best Technical high schools, Dinthill Technical High were I graduated with two 'O' levels. Thinking, 'Yay, I
+                     can take on the World and her Mum', I came back to England. Reality hit... It wasn't until, spring of 2008 that kid
+                     called out to me. I enrolled at East London University the following summer and as they say the rest is history...
+                  </p>
+               </p>
+               <div class="resume_list">
+                  <div class="resume_item">
+                     <p> Name <span>Winstone Anderson</span> </p>
+                  </div>
+               
+                  <div class="resume_item">
+                     <p>City  <span>London</span> </p>
+                  </div>
+                  <div class="resume_item">
+                     <p>Nationality <span>British</span> </p>
+                  </div>
+                  <div class="resume_item">
+                     <p>Full Time <span>Available</span> </p>
+                  </div>
+                  <div class="resume_item">
+                     <p>Freelance <span>Available</span> </p>
+                  </div>
+                  <div class="resume_item">
+                     <p>Phone <span>(+44) 07852133412</span> </p>
+                  </div>
+                  <div class="resume_item">
+                     <p>Email <span>winstonedanderson@msn.com</span> </p>
+                  </div>
+                  
+               </div>
+            </article>
+         </div>
+      </article>
+   </section>
+   <!-- portfolio section -->
+   <section class="portfolio  ">
+      <h2 class="heading">Latest <span>Project</span> </h2>
+      <article class="portfolio_container">
+         <div class="portfolio_box">
+            <div class="portfolio_details active ">
+               <p class="numb">01</p>
+               <h3>Frontend Project</h3>
+               <p>A simple, responsive decision-making app built with vanilla HTML, CSS, and JavaScript. Start by entering your decision
+               topic (e.g., “Should I learn Next.js?”), then add points to either side. The app automatically tracks totals and updates
+               a verdict in real time — making it easy to sanity-check your thinking without over-complicating it.</p>
+               <div class="tech">
+                  <p>HTML5, CSS3, JavaScript</p>
+               </div>
+               <div class="live_github">
+                  <a title="Live Demo" href="#"><i class="bx bx-arrow-back"></i><span>Live Projects</span></a>
+                  <a title="View Code" href="#"><i class="bx bxl-github"></i><span>Github Repository: https://github.com/winstone01/pros_cons</span></a>
+               </div>
+            </div>
+            <div class="portfolio_details">
+               <p class="numb">02</p>
+               <h3>Responsive To-Do List App</h3>
+               <p>A simple, responsive to-do list app built with vanilla HTML, CSS, and JavaScript. It allows users to add tasks, mark them as completed, and delete them. The app also keeps track of pending tasks and provides a clean, user-friendly interface for managing daily to-dos.</p>
+               <div class="tech">
+                  <p>HTML5, CSS3, JavaScript</p>
+               </div>
+               <div class="live_github">
+                  <a title="Live Demo" href="#"><i class="bx bx-arrow-back"></i><span>Live Projects</span></a>
+                  <a title="View Code" href="#"><i class="bx bxl-github"></i><span>Github Repository: https://github.com/winstone01/to_do_list_02</span></a>
+               </div>
+            </div>
+            <div class="portfolio_details">
+               <p class="numb">03</p>
+               <h3>Quiz Game</h3>
+               <p>A simple, responsive quiz game built with vanilla HTML, CSS, and JavaScript. It features a start screen, a timer, and a series of questions with multiple-choice answers. The game tracks the user's score and provides feedback on correct and incorrect answers, making it an engaging way to test knowledge on various topics.</p>
+               <div class="tech">
+                  <p>HTML5, CSS3, JavaScript</p>
+               </div>
+               <div class="live_github">
+                  <a title="Live Demo" href="#"><i class="bx bx-arrow-back"></i><span>Live Projects</span></a>
+                  <a title="View Code" href="#"><i class="bx bxl-github"></i><span>Github Repository:https://github.com/winstone01/Quiz-App-</span></a>
+               </div>
+            </div>
+            <div class="portfolio_details">
+               <p class="numb">04</p>
+               <h3>Scramble Word Game</h3>
+               <p>A fun, interactive word scramble game built with vanilla HTML, CSS, and JavaScript. Players are presented with scrambled words and must unscramble them within a time limit. The game includes multiple difficulty levels and tracks the player's score.</p>
+               <div class="tech">
+                  <p>HTML5, CSS3, JavaScript</p>
+               </div>
+               <div class="live_github">
+                  <a title="Live Demo" href="#"><i class="bx bx-arrow-back"></i><span>Live Projects</span></a>
+                  <a title="View Code" href="#"><i class="bx bxl-github"></i><span>Github Repository:https://github.com/winstone01/word-scramble</span></a>
+               </div>
+            </div>
+            <div class="portfolio_details">
+               <p class="numb">05</p>
+               <h3>Loan Tracker</h3>
+               <p>A simple, responsive loan tracker built with vanilla HTML, CSS, and JavaScript. It allows users to input loan details such as amount, interest rate, and term, and then calculates the monthly payment and total interest over the life of the loan. The app provides a clear breakdown of payments and helps users understand their loan obligations.</p>
+               <div class="tech">
+                  <p>HTML5, CSS3, JavaScript</p>
+               </div>
+               <div class="live_github">
+                  <a title="Live Demo" href="#"><i class="bx bx-arrow-back"></i><span>Live Projects</span></a>
+                  <a title="View Code" href="#"><i class="bx bxl-github"></i><span>Github Repository:https://github.com/winstone01/Loan-Tracker</span></a>
+               </div>
+            </div>
+            <div class="portfolio_details">
+               <p class="numb">06</p>
+               <h3>Finance Dashboard UI</h3>
+               <p>Responsive dashboard UI built with vanilla HTML, CSS, and JavaScript. Includes card components, navigation layout, and
+               data sections designed for clarity and scan-friendly reading.</p>
+               <div class="tech">
+                  <p>HTML5, CSS3, JavaScript</p>
+               </div>
+               <div class="live_github">
+                  <a title="Live Demo" href="#"><i class="bx bx-arrow-back"></i><span>Live Projects</span></a>
+                  <a title="View Code" href="#"><i class="bx bxl-github"></i><span>Github Repository:https://github.com/winstone01/admin-dashboard</span></a>
+               </div>
+            </div>
+         </div>
+         <div class="portfolio_box">
+            <!-- images carousel -->
+            <div class="portfolio_carousel">
+               <div class="img_slide">
+                  <div class="img_item">
+                     <img src="./assests/pro&con.png" alt="pro cons ">
+                  </div>
+                  <div class="im-item">
+                     <img src="./assests/to-do-list.png" alt="pro cons ">
+                  </div>
+                  <div class="im-item">
+                     <img src="./assests/quiz App.png" alt="pro cons ">
+                  </div>
+                  <div class="im-item">
+                     <img src="./assests/scramble word game.png" alt="pro cons ">
+                  </div>
+                  <div class="im-item">
+                     <img src="./assests/loan-tracker.png" alt="pro cons ">
+                  </div>
+                  <div class="im-item">
+                     <img src="./assests/Dashboard.png" alt="pro cons ">
+                  </div>
+               </div>
+            </div>
+            <div class="navigation">
+               <button title="al" class="arrow_left disabled "><i class="bx bx-chevron-left"></i></button>
+               <button title="al" class="arrow_right"><i class="bx bx-chevron-right"></i></button>
+            </div>
+         </div>
+      </article>
+   </section>
+   <!-- contact section -->
+   <section class="contact  ">
+      <article class="contact_container">
+         <div class="contact_box">
+            <h2>Let's work together</h2>
+            <p class="desc">I am available for freelance work and  new opportunities. Feel free to reach out!</p>
+            <div class="contact_details">
+               <i class='bx bxl-github'></i>
+               <div class="detail">
+                  <h2>GitHub</h2>
+                  <p>Git-Hub: https://github.com/winstone01</p>
+               </div>
+            </div>
+            <div class="contact_details">
+               <i class='bx bxs-envelope'></i>
+               <div class="detail">
+                  <h2>Email</h2>
+                  <p>Email: <button type="button" class="copy_email" data-copy="winstone01@gmail.com">winstone01@gmail.com</button></p>
+               </div>
+            </div>
+            <div class="contact_details">
+               <i class='bx bxs-map'></i>
+               <div class="detail">
+                  <h2>Address</h2>
+                  <p>Address: London, UK</p>
+               </div>
+            </div>
+            
+         </div>
+         <div class="contact_box">
+         <form id="contactForm" novalidate>
+         <h2 class="heading">Contact <span>Me!</span></h2>
+            <div class="field_box">
+               <div class="field">
+                  <input id="fullName" name="fullName" type="text" required autocomplete="name">
+                  <label for="fullName">Full Name</label>
+                  <small class="field_error" aria-live="polite"></small>
+               </div>
+            
+               <div class="field">
+                  <input id="email" name="email" type="email" required autocomplete="email">
+                  <label for="email">Email Address</label>
+                  <small class="field_error" aria-live="polite"></small>
+               </div>
+            
+               <div class="field">
+                  <input id="subject" name="subject" type="text" required>
+                  <label for="subject">Email Subject</label>
+                  <small class="field_error" aria-live="polite"></small>
+               </div>
+            
+               <div class="field">
+                  <input id="phone" name="phone" type="tel" autocomplete="tel">
+                  <label for="phone">Phone Number (optional)</label>
+                  <small class="field_error" aria-live="polite"></small>
+               </div>
+            
+               <div class="field field_full">
+                  <textarea id="message" name="message" required minlength="15"></textarea>
+                  <label for="message">Your Message</label>
+                  <small class="field_error" aria-live="polite"></small>
+                  <small class="char_count" aria-live="polite">0 / 500</small>
+               </div>
+            </div>
+            
+            <button type="submit" class="btn" id="sendBtn">Send Message</button>
+         
+         </form>
+         </div>
+         
+      </article>
+      
+   </section>
+   <!-- end of contact section -->
+   <script src="./script.js"></script>
+</body>
+
+</html>
+
+
+
+
+

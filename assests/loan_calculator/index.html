@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<!-- 09/12/2025 -->
+<!-- https://www.youtube.com/watch?v=SdnTnQ3g3lc&t=19s -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Loan Calculator Vol 2.01</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Winstone's Loan Calculator Vol 2.01</h1>
+            <p>Loan Amount £ <input onchange="calculateLoan()" type="number" class="input" id="loan_amount" min="1" max="5000000" value="10000" title="loan amount"> </p>    
+            <p>Interest Rate % <input onchange="calculateLoan()" type="number" class="input" id="interest_rate" min="0" max="100" value="10" step=".1" title="interestRate" > </p>    
+            <p>Months to Pay? <input onchange="calculateLoan()" type="number" class="input" id="months_to_pay" min="6" max="48" value="12" title="payment" > </p>
+            <p class="payment" id="payment" >Monthly Payments:</p>
+        </div>
+        <script src="./script.js" defer></script>
+    </body>
+</html>

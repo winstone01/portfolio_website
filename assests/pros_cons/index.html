@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- https://www.youtube.com/watch?v=Eaud-oZiZkQ&t=2117s -->
+<!-- 15/01/2026 -->
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+         rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+      <link rel="stylesheet" href="./style.css">
+      <title>Pros Cons List Vol0.2022026</title>
+   </head>
+   <body>
+      <!-- Topic Enter Screen -->
+      <main class="app" >
+         <section class="topic_section" id="topicSection">
+            <h1>What is your decision topic?</h1>
+            <input type="text" name="" id="topicInput" class="topic_input" placeholder="e.g Should I learn Next.js?">
+            <button type="button" onclick="submitTopic()" >Start Here</button>
+         </section>
+         <section class="app_content" id="appContent">
+            <h2 class="topic_title" id="topicTitle">ttt</h2>
+            <article class="input_section" >
+               <input type="text" id="itemInput" class="item_input" placeholder="Enter a Point here..." >
+               <button type="button" onclick="addItem('pros')" > Add to Pro's <i class="fa-regular fa-face-smile-beam"></i></button>
+               <button type="button" onclick="addItem('cons')" >Add to Con's  <i class="fa-regular fa-face-frown"></i></button>
+            </article>
+            <article class="list_container">
+               <div class="list">
+                  <h2>Pro's</h2>
+                  <ul id="prosList" class="pros_list"></ul>
+               </div>
+               <div class="list">
+                  <h2>Con's</h2>
+                  <ul id="consList" class="cons_list"></ul>
+               </div>
+            </article>
+            <div class="score_board" id="scoreBoard">
+               Pro's: 0 | Con's <br>
+               Let's Decide
+            </div>
+         </section>
+         <section class="footer">
+            <div class="card">
+               <img src="./images/pic.png" alt="me">
+               <p class="title">Winstone </p>
+               <p>Web Developer | Software Engineer</p>
+               utilizing: <span><i class="fa-brands fa-html5"></i><i class="fa-brands fa-css"></i><i
+                     class="fa-brands fa-js"></i></span>
+               <p>Made by Winstone© 2026 </p>
+            </div>
+         </section>
+      </main>
+      <script defer src="./script.js"></script>
+   </body>
+</html>

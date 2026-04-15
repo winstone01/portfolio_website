@@ -1,0 +1,49 @@
+:root{
+    --body-BG-colour: #002;
+    --text-colour: #fff;
+    --accent-colour: #0ff;
+    --container-BG-colour: darkcyan;
+    --container-font-colour: aliceblue;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--body-BG-colour);
+    color: var(--text-colour);
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.container{
+    background-color: var(--container-BG-colour);
+    color: var(--container-font-colour);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* width: 300px; */
+}
+
+h1{
+    text-align: center;
+    color: var(--accent-colour);
+    font-size: 1.3em;
+}
+
+.input {
+    width: 100%;
+    /* padding: 10px; */
+    border: 2px solid #ccc;
+    font-size: 1.2em;
+    height: 1.8em;
+}
+
+.payment {
+    font-weight: 600;
+    font-size: 1.5em;
+}

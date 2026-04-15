@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- https://www.youtube.com/watch?v=p-2G-7vLuV4&list=PLNCevxogE3fgy0pAzVccadWKaQp9iHspz&index=31 -->
+<!-- 26/08/2025 -->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="style.css">
+        <title>Quiz App vol 1.3</title>
+    </head>
+    <body>
+        <div class="start_screen">
+            <button id="start_button">Start</button>
+        </div>
+        <div id="display_container">
+            <div class="header">
+                <div class="number_of_count">
+                    <span class="number_of_question">1 of 3 question</span>
+                </div>
+                <div class="timer_div">
+                    <i class="fa-solid fa-hourglass-end"></i>
+                    <span class="time_left">10s</span>
+                </div>
+            </div>
+            <div id="container">
+                <!-- question and options here -->
+            </div>
+            <button id="next_btn">Next...</button>
+        </div>
+        <div class="score_container hide">
+            <div id="user_score">Demo Score</div>
+            <button id="restart">Restart</button>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
