@@ -196,3 +196,10 @@ arrowLeft.addEventListener( 'click', () =>
 
   activePortfolio();
 } );
+
+  ( function ()
+    {
+        emailjs.init( {
+          publicKey: "I8EoIhSrdjSh6LsjO",
+      } );
+    } )();
