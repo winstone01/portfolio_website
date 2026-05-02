@@ -197,9 +197,38 @@ arrowLeft.addEventListener( 'click', () =>
   activePortfolio();
 } );
 
-  ( function ()
-    {
-        emailjs.init( {
-          publicKey: "I8EoIhSrdjSh6LsjO",
-      } );
-    } )();
+function sendEmail(){
+  // Implementation for sending email
+  const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const params = {
+      name: document.getElementById("fullName").value,
+      email: document.getElementById("email").value,
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value
+    };
+
+    const serviceID = "service_fuqtuzb";
+    const templateID = "template_aph6lwn";
+
+    emailjs
+      .send(serviceID, templateID, params)
+      .then((res) => {
+        console.log("Email sent:", res);
+
+        contactForm.reset();
+
+        // alert("Your message has been sent successfully!");
+      })
+      .catch((err) => {
+        console.error("EmailJS error:", err);
+        alert("Message failed. Check the console.");
+      });
+  });
+}
+}
+

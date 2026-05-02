@@ -26,6 +26,16 @@
       crossorigin="anonymous" referrerpolicy="no-referrer" />
    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
    <link rel="stylesheet" href="./style.css">
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+      ( function ()
+      {
+         emailjs.init( {
+            publicKey: "I8EoIhSrdjSh6LsjO",
+         } );
+      } )();
+   </script>
    
    <title>Portfolio.Vol1</title>
 </head>
@@ -611,7 +621,7 @@
                </div>
             </div>
             
-            <button type="submit" class="btn" id="sendBtn">Send Message</button>
+            <button type="submit" class="btn" id="sendBtn" onclick="sendEmail()">Send Message</button>
          
          </form>
          </div>
